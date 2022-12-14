@@ -18,7 +18,7 @@ package com.chain.builders;
 import java.util.ArrayList;
 import java.util.List;
 
-import javax.servlet.Filter;
+import com.chain.filter.Filter;
 import javax.servlet.http.HttpServletRequest;
 
 import com.chain.AbstractRequestMatcherRegistry;

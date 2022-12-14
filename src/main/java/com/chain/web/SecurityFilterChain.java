@@ -6,7 +6,7 @@
 package com.chain.web;
 
 import java.util.List;
-import javax.servlet.Filter;
+import com.chain.filter.Filter;
 import javax.servlet.http.HttpServletRequest;
 
 public interface SecurityFilterChain {

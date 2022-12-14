@@ -15,7 +15,7 @@
  */
 package com.chain;
 
-import javax.servlet.Filter;
+import com.chain.filter.Filter;
 
 import com.chain.annotation.SecurityBuilder;
 import com.chain.annotation.SecurityConfigurer;
@@ -165,4 +165,5 @@ public interface HttpSecurityBuilder<H extends HttpSecurityBuilder<H>> extends
 	 * @return the {@link HttpSecurity} for further customizations
 	 */
 	H addFilter(Filter filter);
+	H addFilter(javax.servlet.Filter filter);
 }

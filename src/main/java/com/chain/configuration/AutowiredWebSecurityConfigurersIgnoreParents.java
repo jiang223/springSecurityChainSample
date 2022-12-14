@@ -20,7 +20,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
 
-import javax.servlet.Filter;
+import com.chain.filter.Filter;
 
 import com.chain.WebSecurityConfigurer;
 import com.chain.annotation.SecurityConfigurer;

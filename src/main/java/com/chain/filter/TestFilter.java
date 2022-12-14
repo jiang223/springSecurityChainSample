@@ -20,7 +20,6 @@ import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.AuthorityUtils;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.util.Assert;
-import org.springframework.web.filter.GenericFilterBean;
 
 public class TestFilter extends GenericFilterBean implements InitializingBean {
     private AuthenticationDetailsSource<HttpServletRequest, ?> authenticationDetailsSource;

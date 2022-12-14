@@ -35,7 +35,7 @@ import org.springframework.security.config.annotation.ObjectPostProcessor;
 import org.springframework.security.web.FilterChainProxy;
 import org.springframework.security.web.access.WebInvocationPrivilegeEvaluator;
 
-import javax.servlet.Filter;
+import com.chain.filter.Filter;
 import java.util.List;
 import java.util.Map;
 

@@ -15,7 +15,7 @@
  */
 package com.chain;
 
-import javax.servlet.Filter;
+import com.chain.filter.Filter;
 
 import com.chain.annotation.SecurityBuilder;
 import com.chain.annotation.SecurityConfigurer;

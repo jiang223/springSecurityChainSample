@@ -55,7 +55,7 @@ import org.springframework.web.servlet.handler.HandlerMappingIntrospector;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
-import javax.servlet.Filter;
+import com.chain.filter.Filter;
 import javax.servlet.http.HttpServletRequest;
 
 /**
@@ -2553,6 +2553,7 @@ public final class HttpSecurity extends
 	 * org.springframework.security.config.annotation.web.HttpSecurityBuilder#addFilter(javax.
 	 * servlet.Filter)
 	 */
+	@Override
 	public HttpSecurity addFilter(Filter filter) {
 		Class<? extends Filter> filterClass = filter.getClass();
 		if (!comparator.isRegistered(filterClass)) {
@@ -2563,6 +2564,11 @@ public final class HttpSecurity extends
 		}
 		this.filters.add(filter);
 		return this;
+	}
+
+	@Override
+	public HttpSecurity addFilter(javax.servlet.Filter filter) {
+		return null;
 	}
 
 	/**
